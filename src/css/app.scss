@@ -1,0 +1,41 @@
+
+// app global css in SCSS form
+
+.hero-image {
+  max-width: 110%;
+  border-radius: 20px;
+  box-shadow: 0 20px 80px rgba(213, 0, 0, 0.4);
+  transform: perspective(1000px) rotateY(-10deg) rotateX(5deg);
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.hero-bg-glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(213,0,0,0.2) 0%, rgba(0,0,0,0) 70%);
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-stroke {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+.shadow-glow {
+  box-shadow: 0 0 30px rgba(213, 0, 0, 0.5);
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) perspective(1000px) rotateY(-10deg) rotateX(5deg); }
+  50% { transform: translateY(-20px) perspective(1000px) rotateY(-5deg) rotateX(2deg); }
+  100% { transform: translateY(0px) perspective(1000px) rotateY(-10deg) rotateX(5deg); }
+}
