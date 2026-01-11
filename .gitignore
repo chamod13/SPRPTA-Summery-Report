@@ -31,3 +31,9 @@ yarn-error.log*
 
 # local .env files
 .env.local*
+
+# Backend generated files
+backend/reports/*
+!backend/reports/.gitkeep
+backend/uploads/*
+!backend/uploads/.gitkeep
